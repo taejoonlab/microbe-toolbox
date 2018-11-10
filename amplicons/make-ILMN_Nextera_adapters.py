@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-## Source: illumina-adapter-sequences-1000000002694-08.pdf
+# Source: illumina-adapter-sequences-1000000002694-08.pdf
 
 seq_7 = 'CAAGCAGAAGACGGCATACGAGAT %s GTCTCGTGGGCTCGG'
 seq_5 = 'AATGATACGGCGACCACCGAGATCTACAC %s TCGTCGGCAGCGTC'
 
-data_i7="""
+data_i7 = """
 TCGCCTTA N701 TAAGGCGA
 CTAGTACG N702 CGTACTAG
 TTCTGCCT N703 AGGCAGAA
