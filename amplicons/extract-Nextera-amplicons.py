@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 import os
 import sys
+import re
+import gzip
+
+len_adapter_N5 = 51
+len_adapter_N7 = 47
 
 usage_mesg = 'Usage: %s <filename_psl> <filenmae_src_fa>' % (__file__)
 
 is_error = -1
-if len(sys.argv) != 2:
+if len(sys.argv) != 3:
     is_error = 1
-    sys.stderr.write('Argument Error.\n')
+    sys.stderr.write('Argument Error (%d).\n' % len(sys.argv))
     sys.stderr.write(usage_mesg + "\n")
     sys.exit(1)
 
@@ -16,6 +21,7 @@ filename_psl = sys.argv[1]
 
 # A FASTA file for mapping
 filename_fa = sys.argv[2]
+filename_base = re.sub(r'.(fa|fasta|fa.gz|fasta.gz)$', '', filename_fa)
 
 if not os.access(filename_psl, os.R_OK) or not os.access(filename_fa, os.R_OK):
     sys.stderr.write('Not available.\n')
@@ -24,6 +30,9 @@ if not os.access(filename_psl, os.R_OK) or not os.access(filename_fa, os.R_OK):
 
 adapter_list = dict()
 f_psl = open(filename_psl, 'r')
+if filename_psl.endswith('.gz'):
+    f_psl = gzip.open(filename_psl, 'rt')
+
 for line in f_psl:
     tokens = line.strip().split("\t")
     if len(tokens) < 20:
@@ -45,8 +54,8 @@ for line in f_psl:
 f_psl.close()
 
 count_others = 0
-count_i5_single = 0
-count_i7_single = 0
+count_N5_single = 0
+count_N7_single = 0
 count_pair = 0
 
 amplicon_idx = 1
@@ -58,9 +67,9 @@ for seq_id in adapter_list.keys():
         tmp_bc = list(adapter_list[seq_id][tmp_pos].keys())[0]
 
         if tmp_bc.startswith('Nextera_N5'):
-            count_i5_single += 1
+            count_N5_single += 1
         if tmp_bc.startswith('Nextera_N7'):
-            count_i7_single += 1
+            count_N7_single += 1
 
     elif len(tmp_pos_list) == 2:
         tmp_pos1 = tmp_pos_list[0]
@@ -69,10 +78,9 @@ for seq_id in adapter_list.keys():
         tmp_adapter2 = adapter_list[seq_id][tmp_pos2]
         tmp_bc1 = sorted(tmp_adapter1.keys(), key=tmp_adapter1.get)[-1]
         tmp_bc2 = sorted(tmp_adapter2.keys(), key=tmp_adapter2.get)[-1]
-        tmp_pos2 += 47
         if tmp_bc1.startswith('Nextera_N5') \
                 and tmp_bc2.startswith('Nextera_N7'):
-            tmp_h = '%s-%s-%08d' % (tmp_bc1, tmp_bc2, amplicon_idx)
+            tmp_h = 'S%08d-%s-%s' % (amplicon_idx, tmp_bc1, tmp_bc2)
             tmp_h = tmp_h.replace('Nextera_', '')
             amplicon_idx += 1
             amplicon_list[seq_id] = {'header': tmp_h,
@@ -89,17 +97,38 @@ tmp_h = ''
 tmp_start = 0
 tmp_end = 0
 f_fa = open(filename_fa, 'r')
+if filename_fa.endswith('.gz'):
+    f_fa = gzip.open(filename_fa, 'rt')
+
+f_amplicon = open('%s.amplicons.fa' % filename_base, 'w')
+f_N5 = open('%s.N5.fa' % filename_base, 'w')
+f_N7 = open('%s.N7.fa' % filename_base, 'w')
 for line in f_fa:
     if line.startswith('>'):
         tmp_h = line.strip().lstrip('>').split()[0]
         if tmp_h in amplicon_list:
             is_print = 1
-            print(">%s" % amplicon_list[tmp_h]['header'])
+            f_amplicon.write(">%s" % amplicon_list[tmp_h]['header'] + "\n")
+            f_N5.write(">%s" % amplicon_list[tmp_h]['header'] + "\n")
+            f_N7.write(">%s" % amplicon_list[tmp_h]['header'] + "\n")
         else:
             is_print = 0
     elif is_print > 0:
-            tmp_start = amplicon_list[tmp_h]['start']
-            tmp_end = amplicon_list[tmp_h]['end']
-            print(line.strip()[tmp_start:tmp_end])
+            tmp_seq = line.strip()
 
-print(count_pair, count_i7_single, count_i5_single, count_others)
+            tmp_start = amplicon_list[tmp_h]['start']
+            f_N5.write(tmp_seq[tmp_start:tmp_start+len_adapter_N5] + "\n")
+
+            tmp_end = amplicon_list[tmp_h]['end']
+            f_N7.write(tmp_seq[tmp_end:tmp_end+len_adapter_N7] + "\n")
+
+            tmp_start = amplicon_list[tmp_h]['start'] + len_adapter_N5
+            f_amplicon.write(tmp_seq[tmp_start:tmp_end] + "\n")
+f_N5.close()
+f_N7.close()
+f_amplicon.close()
+
+print("Paired = %d" % count_pair)
+print("SingleN7 = %d, SingleN5 = %d" % (count_N7_single, count_N5_single))
+print("Other = %d" % count_others)
+
