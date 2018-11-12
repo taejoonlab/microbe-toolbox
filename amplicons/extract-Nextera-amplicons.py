@@ -80,10 +80,12 @@ for seq_id in adapter_list.keys():
         tmp_bc2 = sorted(tmp_adapter2.keys(), key=tmp_adapter2.get)[-1]
         if tmp_bc1.startswith('Nextera_N5') \
                 and tmp_bc2.startswith('Nextera_N7'):
-            tmp_h = 'S%08d-%s-%s' % (amplicon_idx, tmp_bc1, tmp_bc2)
+            tmp_bc = '%s-%s' % (tmp_bc1, tmp_bc2)
+            tmp_h = 'S%08d|%s-%s %s' % (amplicon_idx, tmp_bc1, tmp_bc2, seq_id)
             tmp_h = tmp_h.replace('Nextera_', '')
             amplicon_idx += 1
             amplicon_list[seq_id] = {'header': tmp_h,
+                                     'barcode': tmp_bc, 
                                      'start': tmp_pos1,
                                      'end': tmp_pos2}
             count_pair += 1
@@ -93,13 +95,16 @@ for seq_id in adapter_list.keys():
         count_others += 1
 
 is_print = 0
+count_amplicon = 0
 tmp_h = ''
 tmp_start = 0
 tmp_end = 0
+new_h = ''
 f_fa = open(filename_fa, 'r')
 if filename_fa.endswith('.gz'):
     f_fa = gzip.open(filename_fa, 'rt')
 
+bc_seq_list = dict()
 f_amplicon = open('%s.amplicons.fa' % filename_base, 'w')
 f_N5 = open('%s.N5.fa' % filename_base, 'w')
 f_N7 = open('%s.N7.fa' % filename_base, 'w')
@@ -108,22 +113,32 @@ for line in f_fa:
         tmp_h = line.strip().lstrip('>').split()[0]
         if tmp_h in amplicon_list:
             is_print = 1
-            f_amplicon.write(">%s" % amplicon_list[tmp_h]['header'] + "\n")
-            f_N5.write(">%s" % amplicon_list[tmp_h]['header'] + "\n")
-            f_N7.write(">%s" % amplicon_list[tmp_h]['header'] + "\n")
         else:
             is_print = 0
+
     elif is_print > 0:
-            tmp_seq = line.strip()
-
             tmp_start = amplicon_list[tmp_h]['start']
-            f_N5.write(tmp_seq[tmp_start:tmp_start+len_adapter_N5] + "\n")
-
             tmp_end = amplicon_list[tmp_h]['end']
+            if tmp_end - tmp_start < 300:
+                is_print = 0
+                continue
+
+            tmp_header = amplicon_list[tmp_h]['header']
+            f_amplicon.write(">%s" % tmp_header + '\n')
+            f_N5.write(">%s" % tmp_header + '\n')
+            f_N7.write(">%s" % tmp_header + '\n')
+            tmp_bc = amplicon_list[tmp_h]['barcode']
+            if tmp_bc not in bc_seq_list:
+                bc_seq_list[tmp_bc] = dict()
+
+            tmp_seq = line.strip()
+            f_N5.write(tmp_seq[tmp_start:tmp_start+len_adapter_N5] + "\n")
             f_N7.write(tmp_seq[tmp_end:tmp_end+len_adapter_N7] + "\n")
 
             tmp_start = amplicon_list[tmp_h]['start'] + len_adapter_N5
             f_amplicon.write(tmp_seq[tmp_start:tmp_end] + "\n")
+            count_amplicon += 1
+            bc_seq_list[tmp_bc][tmp_header] = tmp_seq[tmp_start:tmp_end]
 f_N5.close()
 f_N7.close()
 f_amplicon.close()
@@ -132,3 +147,11 @@ print("Paired = %d" % count_pair)
 print("SingleN7 = %d, SingleN5 = %d" % (count_N7_single, count_N5_single))
 print("Other = %d" % count_others)
 
+for tmp_bc in sorted(bc_seq_list.keys()):
+    if len(bc_seq_list[tmp_bc]) < count_amplicon * 0.01 :
+        continue
+
+    tmp_bc_simple = tmp_bc.replace('Nextera_','')
+    f_bc_amplicon = open('%s.%s.fa' % (filename_base, tmp_bc_simple), 'w')
+    for tmp_h in sorted(bc_seq_list[tmp_bc].keys()):
+        f_bc_amplicon.write('>%s\n%s\n' % (tmp_h, bc_seq_list[tmp_bc][tmp_h]))
