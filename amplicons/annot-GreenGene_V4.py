@@ -2,11 +2,11 @@
 import sys
 import gzip
 
-filename_fa = '88_otus.ILMN_V34.fa.gz'
+filename_fa = '88_otus.ILMN_V4.fa.gz'
 filename_list = '88_otu_taxonomy.txt'
 
-filename_annot_fa = '88_otus.ILMN_V34_annot.fa'
-filename_missed_fa = '88_otus.ILMN_V34_missed.fa'
+filename_annot_fa = '88_otus.ILMN_V4_annot.fa'
+filename_missed_fa = '88_otus.ILMN_V4_missed.fa'
 
 #370251	k__Bacteria; p__Proteobacteria; c__Gammaproteobacteria; o__Oceanospirillales; f__Endozoicimonaceae; g__Endozoicomonas; s__montiporae
 #2562098	k__Bacteria; p__Firmicutes; c__Bacilli; o__Bacillales; f__Bacillaceae; g__Bacillus; s__foraminis
