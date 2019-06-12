@@ -16,7 +16,7 @@ f_fa.close()
 
 
 def revcomp(tmp_seq):
-    rc = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G', 'N': 'N'}
+    rc = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G', 'N': 'N', ' ': ' '}
     return ''.join([rc[x] for x in tmp_seq[::-1]])
 
 
@@ -36,10 +36,12 @@ for line in f_ipcress_out:
         continue
 
     tmp_seq = ''.join(seq_list[seq_id])
-    tmp_amplicon = tmp_seq[start_pos-1:start_pos+amp_len].upper()
-    if len(set(tmp_amplicon)) > 4:
-        sys.stderr.write('Error: %s\n' % seq_id)
-        continue
+    tmp_amplicon = tmp_seq[start_pos:start_pos+amp_len+1].upper()
+
+    #print(tmp_amplicon)
+    #if len(set(tmp_amplicon)) > 4:
+    #    sys.stderr.write('Error: %s\n' % seq_id)
+    #    continue
 
     if seq_dir == 'revcomp':
         tmp_amplicon = revcomp(tmp_amplicon)
