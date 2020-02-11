@@ -2,11 +2,28 @@
 import os
 import sys
 
-filename_fa = 'GTDBr89_ssu_v3.fa'
 
-filename_query = 'query_species.list'
+def os_check(tmp_name):
+    if os.access(tmp_name, os.R_OK):
+        sys.stderr.write('%s is not accessible. Check it first.\n' % tmp_name)
+        sys.exit(1)
+
+
+# filename_query = 'query_species.list'
+# filename_fa = 'GTDBr89_ssu_v3.fa'
+
+if len(sys.argv) != 3:
+    my_name = os.path.basename(__file__)
+    sys.stderr.write('Usage: %s <query_list> <FASTA file>\n' % my_name)
+    sys.exit(1)
+
+filename_query = sys.argv[1]
+filename_fa = sys.argv[2]
 
 dir_name = 'msa'
+if not os.access(dir_name, os.W_OK):
+    sys.stderr.write('%s is not accessible. Check it first.\n' % dir_name)
+    sys.exit(1)
 
 f_query = open(filename_query, 'r')
 for q_species in f_query:
