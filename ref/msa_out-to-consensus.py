@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
+import os
 import sys
+import gzip
 
 filename_fa = sys.argv[1]
-filename_base = filename_fa.replace('.msa_out.fa', '')
+filename_base = filename_fa.replace('.msa_out.fa.gz', '')
+filename_base = filename_base.replace('.msa_out.fa', '')
+filename_base = os.path.basename(filename_base)
 
 pct_cutoff = 97
 chr_list = ['A', 'T', 'G', 'C', '-']
@@ -10,6 +14,8 @@ chr_list = ['A', 'T', 'G', 'C', '-']
 seq_list = dict()
 h_list = []
 f_fa = open(filename_fa, 'r')
+if filename_fa.endswith('.gz'):
+    f_fa = gzip.open(filename_fa, 'rt')
 for line in f_fa:
     if line.startswith('>'):
         seq_h = line.strip().lstrip('>')
