@@ -44,7 +44,7 @@ for i in range(0, len(cons_seq) - kmer_len):
     if tmp_kmer[0] in ['A', 'T'] or tmp_kmer[-1] in ['A', 'T']:
         continue
     if tmp_kmer not in kmer_freq:
-        kmer_freq[tmp_kmer] = 1
+        kmer_freq[tmp_kmer] = 0
     kmer_freq[tmp_kmer] += 1
 
 f_out = open(filename_out, 'w')
