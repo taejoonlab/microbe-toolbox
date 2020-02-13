@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
+import os
 import sys
 import gzip
 
-filename_fa = sys.argv[1]
-kmer_len = 15
+usage_mesg = 'Usage: %s <FASTA file> <kmer_len>' % os.path.basename(__file__)
 
-filename_base = filename_fa.replace('.cons_seq.fa', '').replace('.gz','')
+if len(sys.argv) != 3:
+    sys.stderr.write('%s\n' % usage_mesg)
+    sys.exit(1)
+    
+filename_fa = sys.argv[1]
+kmer_len = int(sys.argv[2])
+
+
+filename_base = filename_fa.replace('.cons_seq.fa', '').replace('.gz', '')
 filename_out = '%s.cons_%dmer' % (filename_base, kmer_len)
 
 f_fa = open(filename_fa, 'r')
@@ -17,8 +25,6 @@ f_fa.close()
 
 
 def check_kmer(tmp_kmer):
-    rv = {'GC_pct': 0.0, 'hetero_pct': 0.0}
-
     tmp_GC_count = 0
     tmp_hetero_count = 0
     for tmp_n in tmp_kmer:
@@ -32,6 +38,7 @@ def check_kmer(tmp_kmer):
     tmp_GC_pct = tmp_GC_count * 100.0 / len(tmp_kmer)
     tmp_hetero_pct = tmp_hetero_count * 100.0 / len(tmp_kmer)
     return {'GC_pct': tmp_GC_pct, 'hetero_pct': tmp_hetero_pct}
+
 
 kmer_freq = dict()
 for i in range(0, len(cons_seq) - kmer_len):
