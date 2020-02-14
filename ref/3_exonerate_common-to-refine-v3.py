@@ -10,6 +10,7 @@ def revcomp(tmp_seq):
 
 
 filename_vulgar = sys.argv[1]
+
 filename_fa = '%s.fa' % filename_vulgar.split('.')[1]
 filename_out = filename_fa.replace('_v2.fa', '') + '_v3.fa'
 filename_log = filename_fa.replace('_v2.fa', '') + '_v3.log'
@@ -21,6 +22,8 @@ if not os.access(filename_fa, os.R_OK):
 str_info = dict()
 f_vulgar = open(filename_vulgar, 'r')
 for line in f_vulgar:
+    if not line.startswith('vulgar'):
+        continue
     tokens = line.strip().split()
     str_info[tokens[5]] = tokens[8]
 f_vulgar.close()
