@@ -1,0 +1,14 @@
+# from IDT OligoAnalyzer (OligoConc 0.2 uM, NA+ Conc 50 mM)
+#Name  Sequence  MeltTemp
+Escherichia_coli        AGGAAGGGAGTAAAG   42.9
+Klebsiella_pneumoniae   GCGGTAGCACAGAGA   50.9
+Klebsiella_pneumoniae   AGCGGTAGCACAGAG   50.9
+Klebsiella_pneumoniae   GAGCGGTAGCACAGA   50.9
+Staphylococcus_aureus   AACGGACGAGAAGCT   50.0
+Pseudomonas_aeruginosa  CCTGAGGGAGAAAGT   46.5
+Pseudomonas_aeruginosa  CTACTGAGCTAGAGT   41.9
+Enterococcus_faecalis   AACGCTTCTTTCCTC   45.3
+Enterococcus_faecalis   TCTTTCCTCCCGAGT   48.5
+Enterococcus_faecalis   ATGCCGCATGGCATA   51.5
+Enterococcus_faecalis   GCATAAGAGTGAAAG   39.7
+Enterococcus_faecalis   AGAAGAACAAGGACG   44.5
