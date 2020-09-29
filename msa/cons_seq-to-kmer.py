@@ -8,7 +8,7 @@ usage_mesg = 'Usage: %s <FASTA file> <kmer_len>' % os.path.basename(__file__)
 if len(sys.argv) != 3:
     sys.stderr.write('%s\n' % usage_mesg)
     sys.exit(1)
-    
+
 filename_fa = sys.argv[1]
 kmer_len = int(sys.argv[2])
 
@@ -44,12 +44,17 @@ kmer_freq = dict()
 for i in range(0, len(cons_seq) - kmer_len):
     tmp_kmer = cons_seq[i:i+kmer_len]
     rv_kmer = check_kmer(tmp_kmer)
-    if rv_kmer['GC_pct'] > 60 or rv_kmer['GC_pct'] < 40:
+
+    # if rv_kmer['GC_pct'] > 60 or rv_kmer['GC_pct'] < 40:
+    if rv_kmer['GC_pct'] > 70 or rv_kmer['GC_pct'] < 20:
         continue
+
     if rv_kmer['hetero_pct'] > 0:
         continue
-    if tmp_kmer[0] in ['A', 'T'] or tmp_kmer[-1] in ['A', 'T']:
-        continue
+
+    # if tmp_kmer[0] in ['A', 'T'] or tmp_kmer[-1] in ['A', 'T']:
+    #    continue
+
     if tmp_kmer not in kmer_freq:
         kmer_freq[tmp_kmer] = 0
     kmer_freq[tmp_kmer] += 1
