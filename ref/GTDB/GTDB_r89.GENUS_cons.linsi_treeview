@@ -1,0 +1,172 @@
+
+   /-Pectobacterium_GENUS.cons
+  |
+  |--Raoultella_GENUS.cons
+  |
+  |         /-Klebsiella_GENUS.cons
+  |      /-|
+  |     |   \-Serratia_GENUS.cons
+  |     |
+  |   /-|      /-Citrobacter_GENUS.cons
+  |  |  |   /-|
+  |  |  |  |   \-Pantoea_GENUS.cons
+  |  |   \-|
+--|  |     |   /-Enterobacter_GENUS.cons
+  |  |      \-|
+  |  |        |   /-Salmonella_GENUS.cons
+  |  |         \-|
+  |  |           |   /-Escherichia_GENUS.cons
+  |  |            \-|
+  |  |              |   /-Cronobacter_GENUS.cons
+  |  |               \-|
+  |  |                  \-Erwinia_GENUS.cons
+  |  |
+  |  |   /-Edwardsiella_GENUS.cons
+  |  |  |
+  |  |  |   /-Yersinia_GENUS.cons
+   \-|  |  |
+     |  |  |            /-Actinobacillus_GENUS.cons
+     |  |  |         /-|
+     |  |  |        |  |   /-Aggregatibacter_GENUS.cons
+     |  |  |        |   \-|
+     |  |  |        |      \-Mannheimia_GENUS.cons
+     |  |  |      /-|
+     |  |  |     |  |      /-Glaesserella_GENUS.cons
+     |  |  |     |  |   /-|
+     |  |  |     |  |  |  |   /-Haemophilus_GENUS.cons
+     |  |  |     |   \-|   \-|
+     |  |  |     |     |      \-Pasteurella_GENUS.cons
+     |  |  |     |     |
+     |  |  |     |      \-Histophilus_GENUS.cons
+     |  |  |     |
+     |  |  |     |      /-Photobacterium_GENUS.cons
+     |  |  |     |   /-|
+     |  |  |     |  |   \-Vibrio_GENUS.cons
+      \-|  |     |  |
+        |  |     |  |   /-Aeromonas_GENUS.cons
+        |  |   /-|  |  |
+        |  |  |  |  |  |      /-Alteromonas_GENUS.cons
+        |  |  |  |  |  |     |
+        |  |  |  |  |  |     |      /-Pseudomonas_GENUS.cons
+        |  |  |  |  |  |     |   /-|
+        |  |  |  |  |  |     |  |  |   /-Acinetobacter_GENUS.cons
+        |  |  |  |  |  |     |  |   \-|
+        |  |  |  |  |  |     |  |      \-Moraxella_GENUS.cons
+        |  |  |  |  |  |     |  |
+        |  |  |  |  |  |     |  |         /-Coxiella_GENUS.cons
+        |  |  |  |  |  |     |  |      /-|
+        |  |  |  |  |  |     |  |     |   \-Legionella_GENUS.cons
+        |  |  |  |  |  |   /-|  |   /-|
+        |  |  |  |  |  |  |  |  |  |  |   /-Francisella_GENUS.cons
+        |  |  |   \-|  |  |  |  |  |   \-|
+        |  |  |     |  |  |  |  |  |      \-Piscirickettsia_GENUS.cons
+        |  |  |     |  |  |  |  |  |
+        |  |  |     |  |  |  |  |  |         /-Campylobacter_GENUS.cons
+        |  |  |     |  |  |  |  |  |      /-|
+        |  |  |     |  |  |  |  |  |     |   \-Helicobacter_GENUS.cons
+         \-|  |     |  |  |  |  |  |     |
+           |  |     |  |  |  |  |  |     |            /-Leptospira_GENUS.cons
+           |  |     |  |  |  |  |  |     |         /-|
+           |  |     |  |  |   \-|  |     |        |  |   /-Borreliella_GENUS.cons
+           |  |     |  |  |     |  |     |        |   \-|
+           |  |     |  |  |     |  |     |        |      \-Treponema_GENUS.cons
+           |  |     |  |  |     |  |     |        |
+           |  |     |  |  |     |  |     |      /-|      /-Flavobacterium_GENUS.cons
+           |  |     |  |  |     |  |     |     |  |   /-|
+           |  |     |  |  |     |  |     |     |  |  |  |   /-Elizabethkingia_GENUS.cons
+           |  |     |  |  |     |  |     |     |  |  |   \-|
+           |  |     |  |  |     |  |     |     |  |  |      \-Riemerella_GENUS.cons
+           |  |      \-|  |     |  |     |     |   \-|
+           |  |        |  |     |  |     |     |     |         /-Bacteroides_GENUS.cons
+           |  |        |  |     |  |     |     |     |      /-|
+           |  |        |  |     |  |     |     |     |   /-|   \-Prevotella_GENUS.cons
+           |  |        |  |     |  |     |     |     |  |  |
+           |  |        |  |     |  |     |     |      \-|   \-Parabacteroides_GENUS.cons
+           |  |        |  |     |  |     |     |        |
+           |  |        |  |     |  |     |     |         \-Porphyromonas_GENUS.cons
+           |  |        |  |     |  |     |   /-|
+           |  |        |  |     |  |     |  |  |      /-Mycoplasmoides_GENUS.cons
+           |  |        |  |     |  |     |  |  |   /-|
+           |  |        |  |      \-|   /-|  |  |  |   \-Fusobacterium_GENUS.cons
+           |  |        |  |        |  |  |  |  |  |
+           |  |        |  |        |  |  |  |  |  |      /-Caldicellulosiruptor_GENUS.cons
+           |  |        |  |        |  |  |  |  |  |     |
+           |  |        |  |        |  |  |  |  |  |   /-|   /-Bifidobacterium_GENUS.cons
+           |  |        |  |        |  |  |  |  |  |  |  |  |
+           |  |        |  |        |  |  |  |  |  |  |   \-|   /-Cutibacterium_GENUS.cons
+           |  |        |  |        |  |  |  |  |  |  |     |  |
+           |  |        |  |        |  |  |  |  |  |  |      \-|   /-Streptomyces_GENUS.cons
+           |  |        |  |        |  |  |  |  |  |  |        |  |
+           |  |        |  |        |  |  |  |  |  |  |         \-|      /-Mycobacterium_GENUS.cons
+           |  |        |  |        |  |  |  |   \-|  |           |   /-|
+           |  |        |  |        |  |  |  |     |  |           |  |   \-Mycobacteroides_GENUS.cons
+           |  |        |  |        |  |  |  |     |  |            \-|
+           |  |        |  |        |  |  |  |     |  |              |   /-Rhodococcus_GENUS.cons
+           |  |        |  |        |  |  |  |     |  |               \-|
+           |  |        |  |        |  |  |  |     |  |                  \-Corynebacterium_GENUS.cons
+           |  |        |  |        |  |  |  |     |  |
+            \-|        |  |        |  |  |  |     |  |            /-Geobacillus_GENUS.cons
+              |        |  |        |  |  |  |     |  |         /-|
+              |        |  |        |  |  |  |     |  |        |   \-Parageobacillus_GENUS.cons
+              |        |  |        |  |  |  |     |  |        |
+              |         \-|        |  |  |  |     |  |        |      /-Bacillus_GENUS.cons
+              |           |        |  |  |  |      \-|        |     |
+              |           |        |  |  |  |        |        |     |            /-Enterococcus_GENUS.cons
+              |           |        |  |  |  |        |        |     |         /-|
+              |           |        |  |   \-|        |        |     |        |  |   /-Lactococcus_GENUS.cons
+              |           |        |  |     |        |        |     |        |   \-|
+              |           |        |  |     |        |      /-|     |        |      \-Streptococcus_GENUS.cons
+              |           |        |  |     |        |     |  |     |      /-|
+              |           |        |  |     |        |     |  |   /-|     |  |         /-Leuconostoc_GENUS.cons
+              |           |         \-|     |        |     |  |  |  |     |  |      /-|
+              |           |           |     |        |     |  |  |  |     |  |   /-|   \-Oenococcus_GENUS.cons
+              |           |           |     |        |     |  |  |  |     |  |  |  |
+              |           |           |     |        |     |  |  |  |   /-|   \-|   \-Weissella_GENUS.cons
+              |           |           |     |        |     |  |  |  |  |  |     |
+              |           |           |     |        |     |  |  |  |  |  |     |   /-Lactobacillus_GENUS.cons
+              |           |           |     |        |   /-|   \-|  |  |  |      \-|
+              |           |           |     |        |  |  |     |   \-|  |         \-Pediococcus_GENUS.cons
+              |           |           |     |        |  |  |     |     |  |
+              |           |           |     |        |  |  |     |     |   \-Listeria_GENUS.cons
+              |           |           |     |        |  |  |     |     |
+              |           |           |     |        |  |  |     |      \-Staphylococcus_GENUS.cons
+              |           |           |     |         \-|  |     |
+              |           |           |     |           |  |      \-Lysinibacillus_GENUS.cons
+              |           |           |     |           |  |
+              |           |           |     |           |   \-Paenibacillus_GENUS.cons
+              |           |           |     |           |
+              |           |           |     |           |   /-Clostridium_GENUS.cons
+              |           |           |     |            \-|
+              |           |           |     |              |   /-Clostridioides_GENUS.cons
+              |           |           |     |               \-|
+              |           |           |     |                  \-Paeniclostridium_GENUS.cons
+              |           |           |     |
+              |           |           |     |   /-Chlamydia_GENUS.cons
+              |           |           |      \-|
+              |           |           |         \-Chlamydophila_GENUS.cons
+              |           |           |
+              |           |           |      /-Xylella_GENUS.cons
+              |           |           |   /-|
+              |           |           |  |  |   /-Stenotrophomonas_GENUS.cons
+              |           |           |  |   \-|
+              |           |            \-|      \-Xanthomonas_GENUS.cons
+              |           |              |
+              |           |              |   /-Neisseria_GENUS.cons
+              |           |               \-|
+              |           |                 |   /-Delftia_GENUS.cons
+              |           |                  \-|
+              |           |                    |   /-Ralstonia_GENUS.cons
+              |           |                     \-|
+              |           |                       |   /-Burkholderia_GENUS.cons
+              |           |                        \-|
+              |           |                          |   /-Achromobacter_GENUS.cons
+              |           |                           \-|
+              |           |                              \-Bordetella_GENUS.cons
+              |           |
+              |            \-Shewanella_GENUS.cons
+              |
+              |   /-Morganella_GENUS.cons
+               \-|
+                 |   /-Proteus_GENUS.cons
+                  \-|
+                     \-Providencia_GENUS.cons

@@ -1,0 +1,526 @@
+
+            /-Citrobacter_B_koseri.cons
+         /-|
+        |  |   /-Salmonella_enterica.cons
+        |   \-|
+        |     |   /-Salmonella_enterica_C.cons
+        |      \-|
+        |         \-Salmonella_enterica_D.cons
+        |
+        |            /-Escherichia_coli_D.cons
+        |         /-|
+      /-|        |  |   /-Escherichia_marmotae.cons
+     |  |        |   \-|
+     |  |      /-|      \-Escherichia_dysenteriae.cons
+     |  |     |  |
+     |  |     |  |   /-Escherichia_coli.cons
+     |  |     |   \-|
+     |  |   /-|     |   /-Escherichia_coli_C.cons
+     |  |  |  |      \-|
+   /-|  |  |  |         \-Escherichia_flexneri.cons
+  |  |   \-|  |
+  |  |     |   \-Escherichia_albertii.cons
+  |  |     |
+  |  |     |   /-Citrobacter_A_amalonaticus_D.cons
+  |  |      \-|
+  |  |         \-Salmonella_enterica_E.cons
+  |  |
+  |  |   /-Cronobacter_sakazakii.cons
+  |   \-|
+  |      \-Erwinia_amylovora.cons
+  |
+  |--Enterobacter_himalayensis.cons
+  |
+  |         /-Enterobacter_bugandensis.cons
+  |        |
+  |        |      /-Enterobacter_cloacae_M.cons
+  |      /-|   /-|
+  |     |  |  |   \-Enterobacter_nimipressuralis.cons
+  |     |  |  |
+  |     |  |  |      /-Enterobacter_kobei.cons
+  |     |   \-|   /-|
+  |     |     |  |  |   /-Enterobacter_cloacae.cons
+  |     |     |  |   \-|
+  |     |     |  |     |   /-Klebsiella_variicola.cons
+  |     |      \-|      \-|
+  |     |        |        |   /-Klebsiella_pneumoniae.cons
+  |     |        |         \-|
+  |     |        |            \-Klebsiella_quasipneumoniae.cons
+  |     |        |
+  |     |         \-Enterobacter_ludwigii.cons
+  |     |
+  |     |      /-Klebsiella_A_oxytoca.cons
+  |     |   /-|
+  |     |  |  |   /-Klebsiella_A_grimontii.cons
+  |     |  |   \-|
+  |     |  |      \-Klebsiella_A_michiganensis.cons
+  |     |  |
+  |     |  |               /-Serratia_ureilytica.cons
+  |     |  |            /-|
+  |     |  |           |  |   /-Serratia_marcescens_B.cons
+  |     |  |           |   \-|
+  |     |  |           |     |   /-Serratia_marcescens_I.cons
+  |     |  |           |      \-|
+  |     |  |           |         \-Serratia_nematodiphila.cons
+  |     |  |           |
+  |     |  |           |         /-Edwardsiella_piscicida.cons
+  |     |  |           |      /-|
+  |     |  |           |     |  |   /-Morganella_morganii.cons
+  |     |  |           |     |   \-|
+  |     |  |           |     |     |   /-Proteus_mirabilis.cons
+  |     |  |           |     |      \-|
+  |     |  |           |     |         \-Providencia_stuartii_B.cons
+  |     |  |           |     |
+  |     |  |           |     |               /-Actinobacillus_pleuropneumoniae.cons
+  |     |  |           |     |            /-|
+  |     |  |           |     |           |   \-Mannheimia_haemolytica.cons
+  |     |  |           |     |           |
+  |     |  |           |     |         /-|         /-Glaesserella_parasuis.cons
+  |     |  |           |     |        |  |      /-|
+  |     |  |           |     |        |  |   /-|   \-Pasteurella_multocida.cons
+  |     |  |           |     |        |  |  |  |
+  |     |  |           |     |        |   \-|   \-Histophilus_somni.cons
+  |     |  |           |     |        |     |
+  |     |  |           |     |      /-|     |   /-Aggregatibacter_actinomycetemcomitans.cons
+  |     |  |           |     |     |  |      \-|
+  |     |  |           |     |     |  |        |   /-Haemophilus_influenzae.cons
+  |     |  |           |     |     |  |         \-|
+  |     |  |           |     |     |  |            \-Haemophilus_influenzae_D.cons
+  |     |  |           |     |     |  |
+  |     |  |           |     |     |   \-Haemophilus_B_ducreyi.cons
+  |     |  |           |     |     |
+  |     |  |           |     |     |      /-Photobacterium_damselae.cons
+  |     |  |           |     |     |     |
+  |     |  |           |     |     |   /-|   /-Vibrio_cholerae.cons
+  |     |  |           |     |     |  |  |  |
+  |     |  |           |     |     |  |  |  |      /-Vibrio_anguillarum.cons
+  |     |  |           |     |     |  |   \-|   /-|
+  |     |  |           |     |     |  |     |  |  |   /-Vibrio_lentus_B.cons
+  |     |  |           |     |   /-|  |     |  |   \-|
+  |     |  |           |     |  |  |  |      \-|      \-Vibrio_splendidus.cons
+  |     |  |           |     |  |  |  |        |
+  |     |  |           |     |  |  |  |        |   /-Vibrio_vulnificus.cons
+  |     |  |           |     |  |  |  |        |  |
+  |     |  |           |     |  |  |  |         \-|   /-Vibrio_coralliilyticus.cons
+  |     |  |           |     |  |  |  |           |  |
+  |     |  |           |     |  |  |  |            \-|   /-Vibrio_diabolicus.cons
+  |     |  |           |     |  |  |  |              |  |
+  |     |  |           |     |  |  |  |               \-|   /-Vibrio_natriegens.cons
+  |     |  |           |     |  |  |  |                 |  |
+  |     |  |           |     |  |  |  |                  \-|   /-Vibrio_alginolyticus.cons
+  |     |  |           |     |  |  |  |                    |  |
+  |     |  |           |     |  |  |  |                     \-|      /-Vibrio_campbellii.cons
+  |     |  |           |     |  |  |  |                       |   /-|
+  |     |  |           |     |  |   \-|                        \-|   \-Vibrio_harveyi.cons
+  |     |  |           |     |  |     |                          |
+  |     |  |           |     |  |     |                           \-Vibrio_parahaemolyticus.cons
+  |     |  |           |     |  |     |
+  |     |  |           |     |  |     |      /-Shewanella_baltica.cons
+  |     |  |           |     |  |     |     |
+  |     |  |           |     |  |     |   /-|      /-Aeromonas_veronii.cons
+  |     |  |           |     |  |     |  |  |   /-|
+  |     |  |           |     |  |     |  |  |  |  |   /-Aeromonas_caviae.cons
+  |     |  |           |     |  |     |  |   \-|   \-|
+  |     |  |           |     |  |     |  |     |      \-Aeromonas_hydrophila.cons
+  |     |  |           |     |  |     |  |     |
+  |     |  |           |     |  |     |  |      \-Aeromonas_salmonicida.cons
+  |     |  |           |     |  |     |  |
+  |     |  |           |     |  |     |  |   /-Alteromonas_mediterranea.cons
+  |     |  |           |     |  |     |  |  |
+  |     |  |           |     |  |     |  |  |                  /-Pseudomonas_E_syringae.cons
+  |     |  |           |     |  |     |  |  |               /-|
+  |     |  |           |     |  |     |  |  |              |  |   /-Pseudomonas_E_ficuserectae.cons
+  |     |  |           |     |  |     |  |  |            /-|   \-|
+  |     |  |           |     |  |     |  |  |           |  |      \-Pseudomonas_E_avellanae.cons
+  |     |  |           |     |  |      \-|  |           |  |
+  |     |  |           |     |  |        |  |         /-|   \-Pseudomonas_E_syringae_M.cons
+  |     |  |           |     |  |        |  |        |  |
+  |     |  |           |     |  |        |  |        |  |   /-Pseudomonas_E_piscium.cons
+  |     |  |           |     |  |        |  |        |   \-|
+  |     |  |           |     |  |        |  |      /-|      \-Pseudomonas_E_sp002966775.cons
+  |     |  |           |     |  |        |  |     |  |
+  |     |  |           |     |  |        |  |     |  |      /-Pseudomonas_E_hunanensis.cons
+  |     |  |           |     |  |        |  |     |  |   /-|
+  |     |  |           |     |  |        |  |     |  |  |   \-Pseudomonas_E_monteilii_B.cons
+  |     |  |           |     |  |        |  |     |   \-|
+  |     |  |           |     |  |        |  |   /-|     |   /-Pseudomonas_aeruginosa_A.cons
+  |     |  |           |     |  |        |  |  |  |      \-|
+  |     |  |           |     |  |        |  |  |  |         \-Pseudomonas_aeruginosa.cons
+  |     |  |           |     |  |        |  |  |  |
+  |   /-|  |           |     |  |         \-|  |  |   /-Moraxella_catarrhalis.cons
+  |  |  |  |           |     |  |           |  |  |  |
+  |  |  |  |           |     |  |           |  |   \-|      /-Acinetobacter_nosocomialis.cons
+  |  |  |  |           |     |  |           |  |     |   /-|
+  |  |  |  |           |     |  |           |  |     |  |   \-Acinetobacter_pittii.cons
+  |  |  |  |           |     |  |           |  |      \-|
+  |  |  |  |           |     |  |           |  |        |   /-Acinetobacter_baumannii.cons
+  |  |  |  |           |     |  |           |  |         \-|
+  |  |  |  |           |     |  |           |  |            \-Acinetobacter_radioresistens.cons
+  |  |  |  |           |     |  |           |  |
+  |  |  |  |           |     |  |           |  |            /-Piscirickettsia_salmonis.cons
+  |  |  |  |           |     |  |           |  |         /-|
+  |  |  |  |           |     |  |           |  |        |   \-Francisella_tularensis.cons
+  |  |  |  |           |     |  |           |  |      /-|
+  |  |  |  |           |     |  |           |  |     |  |   /-Legionella_fraseri.cons
+  |  |  |  |           |     |  |           |  |   /-|   \-|
+  |  |  |  |           |     |  |           |  |  |  |      \-Legionella_pneumophila.cons
+  |  |  |  |           |     |  |           |  |  |  |
+  |  |  |  |           |     |  |           |  |  |   \-Coxiella_burnetii.cons
+  |  |  |  |           |     |  |           |  |  |
+  |  |  |  |           |     |  |           |  |  |         /-Xylella_fastidiosa.cons
+  |  |  |  |           |     |  |           |  |  |        |
+  |  |  |  |           |     |  |            \-|  |      /-|   /-Stenotrophomonas_maltophilia.cons
+  |  |  |  |           |     |  |              |  |     |  |  |
+  |  |  |  |           |     |  |              |  |     |  |  |      /-Xanthomonas_arboricola.cons
+  |  |  |  |           |     |  |              |  |     |   \-|   /-|
+  |  |  |  |           |     |  |              |  |     |     |  |   \-Xanthomonas_campestris.cons
+  |  |  |  |           |     |  |              |  |     |     |  |
+--|  |  |  |           |     |  |              |  |     |      \-|   /-Xanthomonas_oryzae.cons
+  |  |  |  |           |     |  |              |  |     |        |  |
+  |  |  |  |           |     |  |              |  |     |        |  |         /-Xanthomonas_citri.cons
+  |  |  |  |           |     |  |              |  |     |         \-|      /-|
+  |  |  |  |           |     |  |              |  |   /-|           |   /-|   \-Xanthomonas_phaseoli.cons
+  |  |  |  |           |   /-|  |              |  |  |  |           |  |  |
+  |  |  |  |           |  |  |  |              |  |  |  |            \-|   \-Xanthomonas_perforans.cons
+  |  |  |  |           |  |  |  |              |  |  |  |              |
+  |  |  |  |           |  |  |  |              |  |  |  |               \-Xanthomonas_vasicola.cons
+  |  |  |  |           |  |  |  |              |  |  |  |
+  |  |  |  |           |  |  |  |              |  |  |  |      /-Neisseria_gonorrhoeae.cons
+  |  |  |  |           |  |  |  |              |  |  |  |   /-|
+  |  |  |  |           |  |  |  |              |  |  |  |  |   \-Neisseria_meningitidis_B.cons
+  |  |  |  |           |  |  |  |              |  |  |  |  |
+  |  |  |  |           |  |  |  |              |  |  |  |  |      /-Achromobacter_xylosoxidans.cons
+  |  |  |  |           |  |  |  |              |  |  |   \-|   /-|
+  |  |  |  |           |  |  |  |              |  |  |     |  |  |   /-Bordetella_holmesii.cons
+  |  |  |  |           |  |  |  |              |  |  |     |  |   \-|
+  |  |  |  |           |  |  |  |              |  |  |     |  |      \-Bordetella_pertussis.cons
+  |  |  |  |           |  |  |  |              |  |  |      \-|
+  |  |  |  |           |  |  |  |              |  |  |        |   /-Delftia_acidovorans.cons
+  |  |  |  |           |  |  |  |               \-|  |        |  |
+  |  |  |  |           |  |  |  |                 |  |        |  |      /-Ralstonia_pseudosolanacearum.cons
+  |  |  |  |           |  |  |  |                 |  |         \-|   /-|
+  |  |  |  |         /-|  |  |  |                 |  |           |  |   \-Ralstonia_solanacearum.cons
+  |  |  |  |        |  |  |  |  |                 |  |           |  |
+  |  |  |  |        |  |  |  |  |                 |  |           |  |      /-Burkholderia_mallei.cons
+  |  |  |  |        |  |  |  |  |                 |  |            \-|   /-|
+  |  |  |  |        |  |  |  |  |                 |  |              |  |   \-Burkholderia_thailandensis.cons
+  |  |  |  |        |  |  |  |  |                 |  |              |  |
+  |  |  |  |        |  |  |  |  |                 |  |              |  |   /-Burkholderia_ubonensis.cons
+  |  |  |  |        |  |  |  |  |                 |  |               \-|  |
+  |  |  |  |        |  |  |  |  |                 |  |                 |  |               /-Burkholderia_cepacia.cons
+  |  |  |  |        |  |  |  |  |                 |  |                 |  |            /-|
+  |  |  |  |        |  |  |  |  |                 |  |                 |  |         /-|   \-Burkholderia_cenocepacia.cons
+  |  |  |  |        |  |  |  |  |                 |  |                  \-|        |  |
+  |  |  |  |        |  |  |  |  |                 |  |                    |      /-|   \-Burkholderia_contaminans.cons
+  |  |  |  |        |  |  |  |  |                 |  |                    |     |  |
+  |  |  |  |        |  |  |  |  |                 |  |                    |   /-|   \-Burkholderia_cenocepacia_B.cons
+  |  |  |  |        |  |  |  |  |                 |  |                    |  |  |
+  |  |  |  |        |  |  |  |  |                 |  |                    |  |  |   /-Burkholderia_stagnalis.cons
+  |  |  |  |        |  |  |  |  |                 |  |                     \-|   \-|
+  |  |  |  |        |  |  |  |  |                 |  |                       |      \-Burkholderia_gladioli.cons
+  |  |  |  |        |  |  |  |  |                 |  |                       |
+  |  |  |  |        |  |  |  |  |                 |  |                       |   /-Burkholderia_vietnamiensis.cons
+  |  |  |  |        |  |  |  |  |                 |  |                        \-|
+  |  |  |  |        |  |  |  |  |                 |  |                           \-Burkholderia_multivorans.cons
+  |  |  |  |        |  |  |  |  |                 |  |
+  |  |  |  |        |  |  |  |  |                 |  |         /-Chlamydophila_abortus.cons
+  |  |  |  |        |  |  |  |  |                 |  |      /-|
+  |  |  |  |        |  |  |  |  |                 |  |     |   \-Chlamydophila_psittaci.cons
+  |  |  |  |        |  |  |  |  |                 |  |   /-|
+  |  |  |  |        |  |  |  |  |                 |  |  |  |   /-Chlamydia_suis.cons
+  |  |  |  |        |  |  |  |  |                 |  |  |   \-|
+  |  |  |  |        |  |  |  |  |                 |  |  |     |   /-Chlamydia_muridarum.cons
+  |  |  |  |        |  |  |  |  |                 |  |  |      \-|
+  |  |  |  |        |  |  |  |  |                  \-|  |         \-Chlamydia_trachomatis.cons
+  |  |  |  |        |  |  |  |  |                    |  |
+  |  |  |  |        |  |  |  |  |                    |  |            /-Campylobacter_D_coli.cons
+  |  |  |  |        |  |  |  |  |                    |  |         /-|
+  |  |  |  |        |  |  |  |  |                    |  |        |   \-Campylobacter_D_jejuni.cons
+  |  |  |  |        |  |  |  |  |                    |  |      /-|
+  |  |  |  |        |  |  |  |  |                    |  |     |  |   /-Campylobacter_D_coli_A.cons
+  |  |  |  |        |  |  |  |  |                    |  |     |   \-|
+  |  |  |  |        |  |  |  |  |                    |  |   /-|      \-Campylobacter_D_coli_B.cons
+  |  |  |  |        |  |  |  |  |                    |  |  |  |
+  |  |  |  |        |  |  |  |  |                    |  |  |  |   /-Helicobacter_pylori_BU.cons
+  |  |  |  |        |  |  |  |  |                    |  |  |   \-|
+  |  |  |  |        |  |  |  |  |                    |  |  |     |   /-Helicobacter_pylori_C.cons
+  |  |  |  |        |  |  |  |  |                    |  |  |      \-|
+  |  |  |  |        |  |  |  |  |                    |  |  |         \-Helicobacter_pylori.cons
+  |  |  |  |        |  |  |  |  |                    |  |  |
+  |  |  |  |        |  |  |  |  |                    |  |  |            /-Caldicellulosiruptor_bescii.cons
+  |  |  |  |        |  |  |  |  |                    |  |  |           |
+  |  |  |  |        |  |  |  |  |                    |  |  |           |      /-Bifidobacterium_animalis.cons
+  |  |  |  |        |  |  |  |  |                    |  |  |         /-|   /-|
+  |  |  |  |        |  |  |  |  |                    |  |  |        |  |  |  |   /-Bifidobacterium_bifidum.cons
+  |  |  |  |        |  |  |  |  |                    |  |  |        |  |  |   \-|
+  |  |  |  |        |  |  |  |  |                    |  |  |        |  |  |     |   /-Bifidobacterium_breve.cons
+  |  |  |  |        |  |  |  |  |                    |  |  |        |   \-|      \-|
+  |  |  |  |        |  |  |  |  |                    |  |  |        |     |         \-Bifidobacterium_longum.cons
+  |  |  |  |        |  |  |  |  |                    |  |  |        |     |
+  |  |  |  |        |  |  |  |  |                    |  |  |        |     |   /-Cutibacterium_acnes.cons
+  |  |  |  |        |  |  |  |  |                    |  |  |        |     |  |
+  |  |  |  |        |  |  |  |  |                    |  |  |        |      \-|   /-Streptomyces_albidoflavus.cons
+  |  |  |  |        |  |  |  |  |                    |  |  |        |        |  |
+  |  |   \-|        |  |  |  |  |                    |  |  |        |        |  |      /-Corynebacterium_glutamicum.cons
+  |  |     |        |  |  |  |  |                    |  |  |        |         \-|   /-|
+  |  |     |        |  |  |  |  |                    |  |  |        |           |  |  |   /-Corynebacterium_diphtheriae.cons
+  |  |     |        |  |  |  |  |                    |  |  |        |           |  |   \-|
+  |  |     |        |  |  |  |  |                    |  |  |        |           |  |     |   /-Corynebacterium_pseudotuberculosis.cons
+  |  |     |        |  |  |  |  |                    |  |  |        |            \-|      \-|
+  |  |     |        |  |  |  |  |                    |  |  |        |              |         \-Corynebacterium_ulcerans.cons
+  |  |     |        |  |  |  |  |                    |  |  |        |              |
+  |  |     |        |  |  |  |  |                    |  |  |        |              |   /-Rhodococcus_qingshengii.cons
+  |  |     |        |  |  |  |  |                    |  |  |        |              |  |
+  |  |     |        |  |  |  |  |                    |  |  |        |               \-|      /-Mycobacterium_avium.cons
+  |  |     |        |  |  |  |  |                    |  |  |        |                 |   /-|
+  |  |     |        |  |  |  |  |                    |  |  |        |                 |  |   \-Mycobacterium_tuberculosis.cons
+  |  |     |        |  |  |  |  |                    |  |  |        |                  \-|
+  |  |     |        |  |  |  |  |                    |  |  |        |                    |   /-Mycobacteroides_abscessus.cons
+  |  |     |        |  |  |  |  |                    |  |  |        |                     \-|
+  |  |     |        |  |  |  |  |                    |  |  |        |                        \-Mycobacteroides_chelonae.cons
+  |  |     |        |  |  |  |  |                    |  |  |        |
+  |  |     |        |  |  |  |  |                    |  |  |        |            /-Geobacillus_thermoleovorans.cons
+  |  |     |        |  |  |  |  |                    |  |  |        |         /-|
+  |  |     |        |  |  |  |  |                    |  |  |        |        |   \-Parageobacillus_thermoglucosidasius.cons
+  |  |     |        |  |  |  |  |                    |  |  |        |        |
+  |  |     |        |  |  |  |  |                    |  |  |        |        |            /-Bacillus_altitudinis.cons
+  |  |     |        |  |  |  |  |                     \-|  |        |        |         /-|
+  |  |     |        |  |  |  |  |                       |  |        |        |        |  |   /-Bacillus_pumilus.cons
+  |  |     |        |  |  |  |  |                       |  |        |        |        |   \-|
+  |  |     |        |  |  |  |  |                       |  |        |        |        |      \-Bacillus_safensis.cons
+  |  |     |        |  |  |  |  |                       |  |        |        |      /-|
+  |  |     |        |  |  |  |  |                       |  |        |        |     |  |   /-Bacillus_atrophaeus.cons
+  |  |     |        |  |  |  |  |                       |  |        |        |     |  |  |
+  |  |     |        |  |  |  |  |                       |  |        |        |     |  |  |      /-Bacillus_amyloliquefaciens.cons
+  |  |     |        |  |  |  |  |                       |  |        |        |     |   \-|   /-|
+  |  |     |        |  |  |  |  |                       |  |        |        |     |     |  |   \-Bacillus_velezensis.cons
+  |  |     |        |  |  |  |  |                       |  |        |        |     |     |  |
+  |  |     |        |  |  |  |  |                       |  |        |        |     |      \-|      /-Bacillus_marinus.cons
+  |  |     |        |  |  |  |  |                       |  |        |        |     |        |   /-|
+  |  |     |        |  |  |   \-|                       |  |        |        |   /-|        |  |   \-Bacillus_subtilis.cons
+  |  |     |        |  |  |     |                       |  |        |        |  |  |         \-|
+  |  |     |        |  |  |     |                       |  |        |        |  |  |           |   /-Bacillus_licheniformis.cons
+  |  |     |        |  |  |     |                       |  |        |        |  |  |            \-|
+  |  |     |        |  |  |     |                       |  |        |      /-|  |  |               \-Bacillus_paralicheniformis.cons
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |         /-Bacillus_C_aryabhattai.cons
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |      /-|
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |   /-|   \-Bacillus_C_megaterium.cons
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |  |  |
+  |  |     |        |  |  |     |                       |  |        |     |  |  |   \-|   \-Bacillus_X_frigoritolerans.cons
+  |  |     |        |  |  |     |                       |  |        |     |  |  |     |
+  |  |     |        |  |  |     |                       |  |        |     |  |  |      \-Bacillus_E_coagulans_A.cons
+  |  |     |        |  |  |     |                       |  |        |     |  |  |
+  |  |     |        |  |  |     |                       |  |        |     |  |  |      /-Bacillus_A_cytotoxicus.cons
+  |  |     |        |  |  |     |                       |  |        |     |  |  |     |
+  |  |     |        |  |  |     |                       |  |        |     |  |  |   /-|   /-Bacillus_A_pseudomycoides.cons
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |  |  |
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |   \-|   /-Bacillus_A_anthracis.cons
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |     |  |
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |     |  |   /-Bacillus_A_cereus_AD.cons
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |      \-|  |
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |        |  |      /-Bacillus_A_cereus.cons
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |        |  |     |
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |        |  |   /-|   /-Bacillus_A_thuringiensis_J.cons
+  |  |     |        |  |  |     |                       |  |        |     |  |  |  |         \-|  |  |  |
+  |  |     |        |  |  |     |                       |  |        |     |   \-|  |           |  |   \-|   /-Bacillus_A_mycoides.cons
+  |  |     |        |  |  |     |                       |  |        |     |     |  |           |  |     |  |
+  |  |     |        |  |  |     |                       |  |        |     |     |  |           |  |     |  |      /-Bacillus_A_thuringiensis.cons
+  |  |     |        |  |  |     |                       |  |        |     |     |  |           |  |      \-|     |
+  |  |     |        |  |  |     |                       |  |        |     |     |  |           |  |        |   /-|--Bacillus_A_thuringiensis_S.cons
+  |  |     |        |  |  |     |                       |  |        |     |     |  |            \-|        |  |  |
+  |  |     |        |  |  |     |                       |  |      /-|     |     |  |              |         \-|   \-Bacillus_A_toyonensis.cons
+  |  |     |        |  |  |     |                       |  |     |  |     |     |  |              |           |
+  |  |     |        |  |  |     |                       |  |     |  |     |     |  |              |           |   /-Bacillus_A_cereus_P.cons
+  |  |     |        |  |  |     |                       |  |     |  |     |     |  |              |            \-|
+   \-|     |        |  |  |     |                       |  |     |  |     |     |  |              |               \-Bacillus_A_wiedmannii.cons
+     |     |        |  |  |     |                       |  |     |  |     |     |  |              |
+     |     |        |  |  |     |                       |  |     |  |     |     |  |               \-Bacillus_A_cereus_T.cons
+     |     |        |  |  |     |                       |  |     |  |     |     |  |
+     |     |        |  |  |     |                       |  |     |  |     |     |  |         /-Listeria_monocytogenes_C.cons
+     |     |        |  |  |     |                       |  |     |  |     |     |  |      /-|
+     |     |        |  |  |     |                       |  |     |  |     |     |  |     |  |   /-Listeria_monocytogenes_B.cons
+     |     |        |  |  |     |                       |  |     |  |     |     |  |     |   \-|
+     |     |        |  |  |     |                       |  |     |  |     |     |  |     |      \-Listeria_monocytogenes.cons
+     |     |        |   \-|     |                       |  |     |  |     |     |  |     |
+     |     |        |     |     |                        \-|     |  |     |     |  |     |            /-Lactococcus_lactis.cons
+     |     |        |     |     |                          |     |  |     |     |  |     |         /-|
+     |     |        |     |     |                          |     |  |     |     |  |     |        |   \-Lactococcus_lactis_E.cons
+     |     |        |     |     |                          |     |  |     |     |  |     |        |
+     |     |        |     |     |                          |     |  |     |     |  |     |      /-|      /-Streptococcus_dysgalactiae.cons
+     |     |        |     |     |                          |     |  |     |     |  |     |     |  |   /-|
+     |     |        |     |     |                          |     |  |     |     |  |     |     |  |  |  |   /-Streptococcus_pyogenes.cons
+     |     |        |     |     |                          |     |  |     |      \-|     |     |  |  |   \-|
+     |     |        |     |     |                          |     |  |     |        |     |     |   \-|      \-Streptococcus_equi.cons
+     |     |        |     |     |                          |     |  |     |        |     |     |     |
+     |     |      /-|     |     |                          |     |  |     |        |     |     |     |   /-Streptococcus_agalactiae.cons
+     |     |     |  |     |     |                          |     |  |     |        |     |     |     |  |
+     |     |     |  |     |     |                          |     |  |     |        |     |     |      \-|      /-Streptococcus_suis.cons
+     |     |     |  |     |     |                          |     |  |     |        |     |     |        |   /-|
+     |     |     |  |     |     |                          |     |  |     |        |     |     |        |  |   \-Streptococcus_suis_P.cons
+     |     |     |  |     |     |                          |     |  |     |        |     |     |         \-|
+     |     |     |  |     |     |                          |     |  |     |        |     |     |           |   /-Streptococcus_pneumoniae.cons
+     |     |     |  |     |     |                          |     |  |     |        |     |     |            \-|
+     |     |     |  |     |     |                          |     |  |     |        |   /-|     |              |   /-Streptococcus_gordonii.cons
+     |     |     |  |     |     |                          |     |  |     |        |  |  |     |               \-|
+     |     |     |  |     |     |                          |     |  |     |        |  |  |     |                 |   /-Streptococcus_mutans.cons
+     |     |     |  |     |     |                          |     |  |     |        |  |  |     |                  \-|
+     |     |     |  |     |     |                          |     |  |     |        |  |  |     |                    |   /-Streptococcus_salivarius.cons
+     |     |     |  |     |     |                          |     |  |     |        |  |  |     |                     \-|
+     |     |     |  |     |     |                          |     |  |     |        |  |  |   /-|                        \-Streptococcus_thermophilus.cons
+     |     |     |  |     |     |                          |     |  |     |        |  |  |  |  |
+     |     |     |  |     |     |                          |     |  |   /-|        |  |  |  |  |      /-Lactobacillus_D_sakei.cons
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |     |
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |     |         /-Lactobacillus_G_brevis.cons
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |     |      /-|
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |     |     |   \-Lactobacillus_F_plantarum.cons
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |     |     |
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |     |     |         /-Lactobacillus_H_fermentum.cons
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |   /-|     |      /-|
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |  |  |   /-|     |   \-Lactobacillus_H_reuteri.cons
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |  |  |  |  |   /-|
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |  |  |  |  |  |  |   /-Lactobacillus_johnsonii.cons
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |  |  |  |  |  |   \-|
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |  |  |  |  |  |     |   /-Lactobacillus_delbrueckii.cons
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |  |  |  |  |  |      \-|
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |  |  |  |   \-|        |   /-Lactobacillus_acidophilus.cons
+     |     |     |  |     |     |                          |     |  |  |  |        |  |  |  |  |  |   \-|     |         \-|
+     |     |     |  |     |     |                          |     |  |  |  |        |  |   \-|  |  |     |     |           |   /-Lactobacillus_crispatus.cons
+     |     |     |  |     |     |                          |     |  |  |  |        |  |     |  |  |     |     |            \-|
+     |     |     |  |     |     |                          |     |  |  |  |         \-|     |   \-|     |     |               \-Lactobacillus_helveticus.cons
+     |     |     |  |     |     |                          |     |  |  |  |           |     |     |     |     |
+     |     |     |  |     |     |                          |     |  |  |  |           |     |     |     |      \-Pediococcus_acidilactici.cons
+     |     |     |  |     |     |                          |     |  |  |  |           |     |     |     |
+     |     |     |  |     |     |                          |     |  |  |  |           |     |     |     |   /-Lactobacillus_B_salivarius.cons
+     |     |     |  |     |     |                          |     |  |  |  |           |     |     |      \-|
+     |     |     |  |     |     |                          |     |  |  |  |           |     |     |        |   /-Lactobacillus_C_paracasei.cons
+     |     |     |  |     |     |                          |     |  |  |  |           |     |     |         \-|
+     |     |     |  |     |     |                          |     |  |  |  |           |     |     |            \-Lactobacillus_C_rhamnosus.cons
+     |     |     |  |     |     |                          |     |  |  |  |           |     |     |
+     |     |     |  |     |     |                          |     |  |  |  |           |     |     |      /-Leuconostoc_mesenteroides.cons
+     |     |     |  |     |     |                          |     |  |  |  |           |     |     |   /-|
+     |     |     |  |     |     |                          |     |  |  |  |           |     |      \-|   \-Oenococcus_oeni.cons
+     |     |     |  |     |     |                          |     |  |  |  |           |     |        |
+     |     |     |  |     |     |                          |     |  |  |  |           |     |         \-Weissella_cibaria.cons
+     |     |     |  |     |     |                          |   /-|  |  |  |           |     |
+     |     |     |  |     |     |                          |  |  |  |  |  |           |     |   /-Enterococcus_faecalis.cons
+     |     |     |  |     |     |                          |  |  |  |  |  |           |      \-|
+     |     |     |  |     |     |                          |  |  |  |  |  |           |        |   /-Enterococcus_B_hirae.cons
+     |     |     |  |     |     |                          |  |  |  |  |  |           |         \-|
+     |     |     |  |     |     |                          |  |  |  |  |  |           |           |   /-Enterococcus_B_faecium_B.cons
+     |     |     |  |     |     |                          |  |  |  |  |  |           |            \-|
+     |     |     |  |     |     |                          |  |  |   \-|  |           |               \-Enterococcus_B_faecium.cons
+     |     |     |  |     |     |                          |  |  |     |  |           |
+     |     |     |  |     |     |                          |  |  |     |  |           |   /-Lysinibacillus_sphaericus_A.cons
+     |     |     |  |     |     |                          |  |  |     |  |           |  |
+     |     |     |  |     |     |                          |  |  |     |  |           |  |   /-Staphylococcus_simulans.cons
+     |     |     |  |     |     |                          |  |  |     |  |            \-|  |
+     |     |     |  |     |     |                          |  |  |     |  |              |  |      /-Staphylococcus_chromogenes.cons
+     |     |     |  |     |     |                          |  |  |     |  |              |  |   /-|
+     |     |     |  |     |     |                          |  |  |     |  |               \-|  |   \-Staphylococcus_pseudintermedius.cons
+     |     |     |  |     |     |                          |  |  |     |  |                 |  |
+     |     |     |  |     |     |                          |  |  |     |  |                 |  |         /-Staphylococcus_argenteus.cons
+     |     |     |  |     |     |                          |  |  |     |  |                 |  |      /-|
+     |     |     |  |     |     |                          |  |  |     |  |                  \-|     |   \-Staphylococcus_aureus.cons
+     |     |     |  |     |     |                          |  |  |     |  |                    |   /-|
+     |     |     |  |     |     |                          |  |  |     |  |                    |  |  |   /-Staphylococcus_capitis.cons
+     |     |     |  |     |     |                          |  |  |     |  |                    |  |   \-|
+     |     |     |  |     |     |                          |  |  |     |  |                    |  |      \-Staphylococcus_epidermidis.cons
+     |     |     |  |     |     |                          |  |  |     |  |                     \-|
+     |     |     |  |     |     |                          |  |  |     |  |                       |      /-Staphylococcus_lugdunensis.cons
+     |     |     |  |     |     |                          |  |  |     |  |                       |   /-|
+     |     |     |  |     |     |                          |  |  |     |  |                       |  |  |   /-Staphylococcus_haemolyticus.cons
+     |     |     |  |     |     |                          |  |  |     |  |                       |  |   \-|
+     |     |     |  |     |     |                          |  |  |     |  |                        \-|     |   /-Staphylococcus_equorum_B.cons
+     |     |   /-|  |     |     |                          |  |  |     |  |                          |      \-|
+     |     |  |  |  |     |     |                          |  |  |     |  |                          |         \-Staphylococcus_saprophyticus.cons
+     |     |  |  |  |     |     |                          |  |  |     |  |                          |
+     |     |  |  |  |     |     |                          |  |  |     |  |                           \-Staphylococcus_hominis.cons
+     |     |  |  |  |     |     |                          |  |  |     |  |
+     |     |  |  |  |     |     |                          |  |  |     |  |   /-Paenibacillus_H_larvae.cons
+     |     |  |  |  |     |     |                          |  |  |     |   \-|
+     |     |  |  |  |     |     |                          |  |  |     |     |   /-Paenibacillus_polymyxa.cons
+     |     |  |  |  |     |     |                          |  |  |     |      \-|
+     |     |  |  |  |     |     |                          |  |  |     |        |   /-Paenibacillus_polymyxa_C.cons
+     |     |  |  |  |     |     |                          |  |  |     |         \-|
+     |     |  |  |  |     |     |                          |  |  |     |            \-Paenibacillus_polymyxa_B.cons
+     |     |  |  |  |     |     |                          |  |  |     |
+     |     |  |  |  |     |     |                          |  |  |     |      /-Clostridioides_difficile.cons
+     |     |  |  |  |     |     |                          |  |  |     |   /-|
+     |     |  |  |  |     |     |                           \-|  |     |  |   \-Paeniclostridium_sordellii.cons
+     |     |  |  |  |     |     |                             |  |     |  |
+     |     |  |  |  |     |     |                             |  |     |  |      /-Clostridium_P_perfringens.cons
+     |     |  |  |  |     |     |                             |  |      \-|   /-|
+     |     |  |  |  |     |     |                             |  |        |  |  |   /-Clostridium_botulinum_A.cons
+     |     |  |  |  |     |     |                             |  |        |  |   \-|
+     |     |  |  |  |     |     |                             |  |        |  |     |   /-Clostridium_butyricum.cons
+     |     |  |  |  |     |     |                             |  |        |  |      \-|
+     |     |  |  |  |     |     |                             |  |         \-|        |   /-Clostridium_beijerinckii.cons
+     |     |  |  |  |     |     |                             |  |           |         \-|
+     |     |  |  |  |     |     |                             |  |           |            \-Clostridium_saccharobutylicum.cons
+     |     |  |  |  |     |     |                             |  |           |
+     |     |  |  |  |     |     |                             |  |           |   /-Clostridium_I_pasteurianum.cons
+     |     |  |  |  |     |     |                             |  |            \-|
+     |     |  |  |  |     |     |                             |  |              |   /-Clostridium_F_sporogenes.cons
+     |     |  |  |  |     |     |                             |  |               \-|
+     |     |  |  |  |     |     |                             |  |                 |   /-Clostridium_F_botulinum_A.cons
+     |     |  |  |  |     |     |                             |  |                  \-|
+     |     |  |  |  |     |     |                             |  |                     \-Clostridium_F_botulinum.cons
+     |     |  |  |  |     |     |                             |  |
+     |     |  |  |  |     |     |                             |  |      /-Mycoplasmoides_pneumoniae.cons
+     |     |  |  |  |     |     |                             |  |   /-|
+     |     |  |  |  |     |     |                             |  |  |  |   /-Fusobacterium_C_necrophorum.cons
+     |     |  |  |  |     |     |                             |  |  |   \-|
+     |     |  |  |  |     |     |                             |  |  |     |   /-Fusobacterium_animalis.cons
+     |     |  |  |  |     |     |                             |  |  |      \-|
+     |      \-|  |  |     |     |                             |  |  |         \-Fusobacterium_polymorphum.cons
+     |        |  |  |     |     |                             |  |  |
+     |        |  |  |     |     |                             |   \-|         /-Parabacteroides_distasonis.cons
+     |        |  |  |     |     |                             |     |        |
+     |        |  |  |     |     |                             |     |      /-|      /-Bacteroides_B_dorei.cons
+     |        |  |  |     |     |                             |     |     |  |   /-|
+     |        |  |  |     |     |                             |     |     |   \-|   \-Bacteroides_fragilis.cons
+     |        |  |  |     |     |                             |     |   /-|     |
+     |        |  |  |     |     |                             |     |  |  |      \-Prevotella_intermedia.cons
+     |        |  |  |     |     |                             |     |  |  |
+     |        |  |  |     |     |                             |      \-|   \-Porphyromonas_gingivalis.cons
+     |        |  |  |     |     |                             |        |
+     |        |  |  |     |     |                             |        |   /-Flavobacterium_psychrophilum.cons
+     |        |  |  |     |     |                             |         \-|
+     |        |  |  |     |     |                             |           |   /-Elizabethkingia_anophelis.cons
+     |        |  |  |     |     |                             |            \-|
+     |        |  |  |     |     |                             |               \-Riemerella_anatipestifer.cons
+     |        |  |  |     |     |                             |
+     |        |  |  |     |     |                             |   /-Leptospira_interrogans.cons
+     |        |  |  |     |     |                              \-|
+     |        |  |  |     |     |                                |   /-Borreliella_burgdorferi.cons
+     |        |  |  |     |     |                                 \-|
+     |        |  |  |     |     |                                    \-Treponema_pallidum.cons
+     |        |  |  |     |     |
+     |        |  |  |     |     |   /-Yersinia_enterocolitica.cons
+     |        |  |  |     |      \-|
+     |        |  |  |     |        |   /-Yersinia_pestis.cons
+     |        |  |  |     |         \-|
+     |        |  |  |     |            \-Yersinia_ruckeri.cons
+     |        |  |  |     |
+     |        |  |  |     |   /-Serratia_plymuthica.cons
+     |        |  |  |      \-|
+     |        |  |  |         \-Pectobacterium_carotovorum_E.cons
+     |        |  |  |
+     |        |  |  |   /-Raoultella_ornithinolytica.cons
+     |        |  |   \-|
+     |        |  |      \-Raoultella_planticola.cons
+     |        |  |
+     |        |   \-Klebsiella_B_aerogenes.cons
+     |        |
+     |        |   /-Citrobacter_freundii.cons
+     |         \-|
+     |           |   /-Citrobacter_braakii.cons
+     |            \-|
+     |               \-Citrobacter_portucalensis.cons
+     |
+     |   /-Pantoea_ananatis.cons
+      \-|
+        |   /-Pantoea_agglomerans.cons
+         \-|
+            \-Pantoea_vagans_B.cons
